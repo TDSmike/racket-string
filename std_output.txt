@@ -28,12 +28,12 @@ languages
 form
 Sinitic
 branch
-of
-Sino-Tibetan
+ofthe
 family.
 The
 spoken
 varieties
+of
 are
 usually
 considered
@@ -55,7 +55,6 @@ sometimes
 separate
 family.[e]
 Investigation
-historical
 relationships
 among
 ongoing.

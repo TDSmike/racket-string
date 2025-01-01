@@ -110,13 +110,10 @@ int main() {
         std::unordered_map<std::string, int> pairFrequencies = getPairFrequencies(vocab);
         std::string mostFrequentPair = findMostFrequentPair(pairFrequencies);
         if (mostFrequentPair.empty()) break;
-        // std::cout<<vocab.size()<<" ";
         vocab = mergePair(vocab, mostFrequentPair);
         vocabSize = vocab.size();
     }
-    // 记录结束时间
     auto end = std::chrono::high_resolution_clock::now();
-    // 计算持续时间
     std::chrono::duration<double> duration = end - start;
     std::cout << "Time taken: " << duration.count() << " seconds" << std::endl;
 
@@ -124,8 +121,5 @@ int main() {
     for (const std::string& token : vocab) {
         outFile << token << std::endl;
     }
-    // for (const std::string& token : vocab) {
-    //     std::cout << token << std::endl;
-    // }
     return 0;
 }

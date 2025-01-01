@@ -138,9 +138,6 @@ int main() {
             localVocab = mergePair(localVocab, mostFrequentPair);
             localVocabSize = localVocab.size();
         }
-        // std::cout<<localVocabSize<<std::endl;
-
-
         #pragma omp critical
         {
             // 将结果合并到全局的 vocab 中
